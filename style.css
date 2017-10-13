@@ -1,0 +1,38 @@
+header{
+  background:#0a5679;
+  padding:10px;
+  text-decoration:underline;
+}
+
+header a{
+  text-decoration: none;
+}
+header a:visited{
+  color: #fff;
+}
+
+nav{
+  float:right;
+}
+
+nav div{
+  background:#0a5679;
+  margin:10px;
+  padding: 10px;
+}
+
+nav div:hover{
+  background:#4f08d3;
+}
+
+nav a{
+  color:#fff;
+  text-decoration: none;
+}
+nav a:visited{
+  color:#fff;
+}
+
+nav div#current{
+  background: #9e0979;
+}
