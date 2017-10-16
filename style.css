@@ -1,3 +1,4 @@
+/*Header*/
 header{
   background:#0a5679;
   padding:10px;
@@ -11,6 +12,7 @@ header a:visited{
   color: #fff;
 }
 
+/*Menu*/
 nav{
   float:right;
 }

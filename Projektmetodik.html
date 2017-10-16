@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <title>Projektmetodik</title>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <a href="index.html">
@@ -12,30 +14,33 @@
     </a>
   </header>
   <aside>
-      <nav>
-        <div>
-          <a href="Klienttekniker.html">Klienttekniker</a>
-        </div>
-        <div id="current">
-          <a href="Projektmetodik.html">Projektmetodik</a>
-        </div>
-        <div>
-          <a href="Internet.html">Internet</a>
-        </div>
-        <div>
-          <a href="Analys.html">Analys</a>
-        </div>
-        <div>
-          <a href="Kontakt.html">Kontakt</a>
-        </div>
-      </nav>
+    <nav>
+      <div>
+        <a href="Klienttekniker.html">Klienttekniker</a>
+      </div>
+      <div id="current">
+        <a href="Projektmetodik.html">Projektmetodik</a>
+      </div>
+      <div>
+        <a href="Internet.html">Internet</a>
+      </div>
+      <div>
+        <a href="Analys.html">Analys</a>
+      </div>
+      <div>
+        <a href="Kontakt.html">Kontakt</a>
+      </div>
+    </nav>
   </aside>
   <article>
     <h2>
       Vattenfallsmetodik
     </h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse repellendus, dignissimos porro repudiandae cum consequatur accusamus culpa autem aliquid iusto eius ab, tempora illo quae officia dicta nemo laboriosam nostrum.
+      Vattenfallsmetoden är en systemutvecklingsmetod där arbetet läggs up som ett sekventiellt "vattenfall" med faser där varje
+      fas måste bli klar innan nästa påbörjas.
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vattenfallsmetoden_JPG.jpg/525px-Vattenfallsmetoden_JPG.jpg"
+        alt="Exempelbild på vattenfallsmetoden">
     </p>
     <h2>
       Agil utveckling
@@ -44,14 +49,70 @@
       Det agila manifestet
     </h3>
     <p>
-      Lorem
+      Agila metoder är sätt att utveckla programvara som följer principer som fokuserar på kundnöjdhet och kommunikation mellan
+      kund och utvecklare. De bygger på att man arbetar i korta cykler där man kontinuerligt kommer med feedback över hur
+      arbetet går. Det leder till att man snabbt kan göra ändringar om man stöter på problem.
     </p>
     <h3>
       Hur man arbetar i Scrum
     </h3>
     <p>
-      Lorem
+      I Scrum arbetar man i så kallade "Sprintar" som har flera beståndsdelar i form a obligatoriska möten och dokument och specifika
+      roller för medlemmar av projektet.
+      <br>Rollerna är:
+      <ul>
+        <li>
+          Produktägare: En person som är kundens/kundernas representat.
+        </li>
+        <li>
+          Scrummaster: "Coach" över utvecklarteamet. Ser till att arbetet blir klart tills sprintens slut och försöker ta bort möjliga
+          hinder för utvecklarteamet
+        </li>
+        <li>
+          Utvecklarteam: Utvecklarna som jobbar i projektet.
+        </li>
+      </ul>
+      <!--När man börjar projektet sätter man upp en Productbacklog, där man delar upp projektet i mindre delar. Produktägaren ordnar dessa delar efter hur viktiga de är för kunden. <br>
+      I början av Sprinten tar utvecklarteamet på sig vilka delar de tänker jobba på och lägger dem i Sprintbacklog.<br>
+      Varje dag under sprinten kommer utvecklarna ha DailyScrum möten med Scrummaster, där de kort och snabbt går igenom vad de har gjort, vad de kommer göra och vad som möjligtvis kommer hindra deras arbete.<br>
+      I slutet av Sprinten har man en Sprintreview där alla som har intresse av projektet (även folk som inte tar del av projektet) utvärderar och granskar sprintens resultat.<br>
+      Utvecklarna berättar vad de jobbat på och gör en demonstration av funktionaliteten av det de gjort.<br>
+      Resultatet av Sprintreviewn är en uppdaterad Productbacklog som följer vad alla tycker borde arbetas på in följande sprints.<br>
+      Därefter har produktägaren, Scrummastern och utvecklarteamet en Sprintretrospective, där de går igenom vad som gått bra/dåligt under sprinten och vad som kan förbättras inför nästa sprint.<br>
+      Tillslut har produktägarern ett Sprint planing möte med scrum-gruppen där han/hon går igenom önskade ändringar och prioriteringar och utvecklarteamet tar på sig nya arbetsuppgifter i en ny Sprintbacklog.<br>
+      -->
+      En sprint byggs upp av 7 beståndsdelar.
+      <ol>
+        <li><b>Productbacklog:</b> En lista av de arbetsuppgifter som behöver göras</li>
+        <li><b>Sprintbacklog:</b> En lista av de arbetsuppgifter som utvecklarteamet tagit på sig att göra från Productbacklog under sprinten</li>
+        <li><b>DailyScrum:</b> Ett kort och snabbt möte där varje medlem i utvecklarteamet går igenom med Scrummaster
+          <ul>
+            <li>
+              Vad har jag gjort?
+            </li>
+            <li>
+              Vad ska jag göra?
+            </li>
+            <li>
+              Vad kan hindra mig från att göra det?
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Sprint Review:</b> Ett möte där man granskar sprintens resultat. Man går igenom Sprintbacklog och utvecklarteamet gör en demonstration av det de implementerat för produktägaren, kunder och annat folk som är intresserade av projektet.
+          Målet är att alla ska kunna kommentera, ge förslag och få klarhet över var projektet ligger.
+          Därefter går Produktägaren igenom en ny uppdaterad Productbacklog.
+        </li>
+        <li>
+          <b>Sprint Retrospective:</b> Produktägaren, Scrummastern och utvecklarteamet går igenom vad som gått bra och dåligt under sprinten och försöker hitta förbättringar som kan göras inför nästa sprint
+        </li>
+        <li>
+          <b>Sprintplanning:</b> Ett möte där produktägaren går igenom önskade ändringar.
+          Teamet bryter sedan ned de nya kraven och gör tidsestimeringar över dem, och bygger upp en ny Sprintbacklog.
+        </li>
+      </ol>
     </p>
   </article>
 </body>
+
 </html>
