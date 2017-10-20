@@ -45,6 +45,16 @@ nav a:visited{
 nav div#current{
   background: #9e0979;
 }
+/*highlight on index*/
+section div{
+  text-align: center;
+  padding:50px;
+  margin:5px auto;
+  background-color: #a57;
+  width:60%;
+  color:#fff;
+  border-radius: 25px;
+}
 
 /*tabel of contents on indexpage*/
 #tableofcontents{
