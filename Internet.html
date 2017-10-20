@@ -35,35 +35,102 @@
       Klient-server-modellen
     </h2>
     <p>
-      
+      Klient-server-modellen är en model över hur olika programkomponenter kommuniserar med varandra.
+      Klienten kännetecknas av att den frågar om information från servern, och servern ger infromation när tillfrågad av klienten.
+      Ett exempel på klient-server-modellen är webbsidor, där klienten är webläsaren och servern är sidans servervärd.
     </p>
     <h2>
       Internetkommunikation
     </h2>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/7_LPdttKXPc"></iframe>
+    <p>
+      <div class="media">
+        <iframe src="https://www.youtube.com/embed/7_LPdttKXPc"></iframe><br>
+        <i>
+          Klipp om hur internet fungerar
+        </i>
+      </div>
+      Internet är ett enormt nätverk av datorer/servrar som håller information. För att kunna kommunisera med andra servrar i nätverket måste de följa samma protokoll (se nedan). Detta protokoll kallas <abbr title="Internet Protocol">IP</abbr>
+      När information skickas mellan datorer över internet bryts de ner till mindre paket, som sedan byggs ihop igen när de kommit till rätt dator. För att paketen ska kunna hitta till rätt dator följer de en IP-Adress, en unik serie av nummer för varje dator på nätverket.<br>
+      Vanligtvis är det för svårt för användare att komma ihåg IP-adresser till internetservrar, därför använder man sig av <abbr title="Domain Name System">DNS</abbr> servrar. En DNS server är en server som innehåller en databas med <abbr title="t. ex: 'www.dn.se'">domännamn</abbr> till IP-adresser, så att man lätt kan koppla upp sig till en server genom att bara komma ihåg dess namn.
+    </p>
     <h3>
       Protokoll
     </h3>
     <p>
-      Lorem
+      Ett protokoll är en sorts kommunikations-överenskommelse mellan två eller flera deltagare, regler som alla flöjer för att undvika missförstånd.
     </p>
     <h3>
-      http/https
+      HTTP/HTTPS
     </h3>
     <p>
-      Lorem
+      <abbr title="HyperText Transfer Protocol">HTTP</abbr> är ett kommunikationsprotokoll som används för att överföra webbsidor över internet.
+      Det fungerar genom att klienten skickar en förfrågan till servern via en sträng som innehåller vilken HTTP version den använder och vilken fil klienten vill att servern ska skicka.<br>
+      <abbr title="HyperText Transfer Protocol Secure">HTTPS</abbr> fungerar på samma sätt men vid uppkopling skapas det en "sessionsnyckel" som används för att kryptera informationsöverföringen mellan klient och server.
     </p>
     <h3>
-      ftp/ftps
+      FTP/FTPS
     </h3>
     <p>
-      lorem
+      <abbr title="File Transfer Protocol">FTP</abbr> är ett filöverföringsprotokoll som använder två separata uppkoplingar, en för kommandon och en för dataöverföring. Används oftast till att ladda upp webbsidor till servrar.<br>
+      <abbr title="File Transfer Protocol Secure">FTPS</abbr> fungerar som FTP men den skapar en säker uppkopling genom två metoder.
+      <ul>
+        <li>
+          <h4>Implicit uppkoppling</h4>
+          <p>
+            Klienten "utmanar" servern med ett krypterat "hallå" meddelande. Om servern inte får ett matchande "hallå" bryts uppkoplingen direkt.
+          </p>
+        </li>
+        <li>
+          <h4>
+            Explicit uppkoppling
+          </h4>
+          <p>
+            Klienten måste fråga om en säker uppkoppling till servern, som sen sätter upp en överenskommen kryptionsmetod. Om klienten inte gör en säkerhetsförfrågan kan servern låta klienten fortsätta i "osäkert" läge eller vägra uppkopplingen helt och hållet.
+          </p>
+        </li>
+      </ul>
     </p>
     <h2>
       Tillgänglighet
     </h2>
     <p>
-      WCAG lorem
+      <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> är en lista av riktlinjer för att göra hemsidor tillgängliga för alla.<br>
+      <ul>
+        Några exempel punkter från WCAGs hemsida:
+        <li>
+          <h3>
+            1.4.1 Use of Color
+          </h3>
+          <h4>
+            Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.                
+          </h4>
+          <p>
+            Om någon som är färgblind går in på en sida där information ges ut endast via färg leder till att den färgblinde kanske inte kan ta upp den informationen.
+          </p>
+        </li>
+        <li>
+          <h3>
+            2.3.2 Three Flashes
+          </h3>
+          <h4>
+            Web pages do not contain anything that flashes more than three times in any one second period.
+          </h4>
+          <p>
+            Om något blinkar mycket på sidan kan det trigga epilepsi.
+          </p>
+        </li>
+        <li>
+          <h3>
+            3.1.1 Language of Page
+          </h3>
+          <h4>
+            The default human language of each Web page can be programmatically determined.
+          </h4>
+          <p>
+            Om man har "programmerat" vilket språk sidan följer kan de flesta webläsare översätta sidans text till användarens språk, vilket leder till att fler kan besöka och ta användning av sidan.
+          </p>
+        </li>
+      </ul>
     </p>
   </article>
 </body>
