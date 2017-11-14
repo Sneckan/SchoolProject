@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-<title>Internet</title>
+<html lang="sv">
 <head>
+  <title>Internet</title>    
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -42,13 +42,13 @@
     <h2>
       Internetkommunikation
     </h2>
-    <p>
-      <div class="media">
+    <div class="media">
         <iframe src="https://www.youtube.com/embed/7_LPdttKXPc"></iframe><br>
         <i>
           Klipp om hur internet fungerar
         </i>
       </div>
+    <p>
       Internet är ett enormt nätverk av datorer/servrar som håller information. För att kunna kommunisera med andra servrar i nätverket måste de följa samma protokoll (se nedan). Detta protokoll kallas <abbr title="Internet Protocol">IP</abbr>
       När information skickas mellan datorer över internet bryts de ner till mindre paket, som sedan byggs ihop igen när de kommit till rätt dator. För att paketen ska kunna hitta till rätt dator följer de en IP-Adress, en unik serie av nummer för varje dator på nätverket.<br>
       Vanligtvis är det för svårt för användare att komma ihåg IP-adresser till internetservrar, därför använder man sig av <abbr title="Domain Name System">DNS</abbr> servrar. En DNS server är en server som innehåller en databas med <abbr title="t. ex: 'www.dn.se'">domännamn</abbr> till IP-adresser, så att man lätt kan koppla upp sig till en server genom att bara komma ihåg dess namn.
@@ -70,7 +70,6 @@
     <h3>
       FTP/FTPS
     </h3>
-    <p>
       <abbr title="File Transfer Protocol">FTP</abbr> är ett filöverföringsprotokoll som använder två separata uppkoplingar, en för kommandon och en för dataöverföring. Används oftast till att ladda upp webbsidor till servrar.<br>
       <abbr title="File Transfer Protocol Secure">FTPS</abbr> fungerar som FTP men den skapar en säker uppkopling genom två metoder.
       <ul>
@@ -89,49 +88,48 @@
           </p>
         </li>
       </ul>
-    </p>
     <h2>
       Tillgänglighet
     </h2>
+    <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> är en lista av riktlinjer för att göra hemsidor tillgängliga för alla.<br>
     <p>
-      <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> är en lista av riktlinjer för att göra hemsidor tillgängliga för alla.<br>
-      <ul>
-        Några exempel punkter från WCAGs hemsida:
-        <li>
-          <h3>
-            1.4.1 Use of Color
-          </h3>
-          <h4>
-            Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.                
-          </h4>
-          <p>
-            Om någon som är färgblind går in på en sida där information ges ut endast via färg leder till att den färgblinde kanske inte kan ta upp den informationen.
-          </p>
-        </li>
-        <li>
-          <h3>
-            2.3.2 Three Flashes
-          </h3>
-          <h4>
-            Web pages do not contain anything that flashes more than three times in any one second period.
-          </h4>
-          <p>
-            Om något blinkar mycket på sidan kan det trigga epilepsi.
-          </p>
-        </li>
-        <li>
-          <h3>
-            3.1.1 Language of Page
-          </h3>
-          <h4>
-            The default human language of each Web page can be programmatically determined.
-          </h4>
-          <p>
-            Om man har "programmerat" vilket språk sidan följer kan de flesta webläsare översätta sidans text till användarens språk, vilket leder till att fler kan besöka och ta användning av sidan.
-          </p>
-        </li>
-      </ul>
+      Några exempel punkter från WCAGs hemsida:          
     </p>
+    <ul>
+      <li>
+        <h3>
+          1.4.1 Use of Color
+        </h3>
+        <h4>
+          Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.                
+        </h4>
+        <p>
+          Om någon som är färgblind går in på en sida där information ges ut endast via färg leder till att den färgblinde kanske inte kan ta upp den informationen.
+        </p>
+      </li>
+      <li>
+        <h3>
+          2.3.2 Three Flashes
+        </h3>
+        <h4>
+          Web pages do not contain anything that flashes more than three times in any one second period.
+        </h4>
+        <p>
+          Om något blinkar mycket på sidan kan det trigga epilepsi.
+        </p>
+      </li>
+      <li>
+        <h3>
+          3.1.1 Language of Page
+        </h3>
+        <h4>
+          The default human language of each Web page can be programmatically determined.
+        </h4>
+        <p>
+          Om man har "programmerat" vilket språk sidan följer kan de flesta webläsare översätta sidans text till användarens språk, vilket leder till att fler kan besöka och ta användning av sidan.
+        </p>
+      </li>
+    </ul>
   </article>
 </body>
 </html>

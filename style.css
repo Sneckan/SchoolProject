@@ -61,14 +61,14 @@ section div{
   list-style-type: none;
 }
 
-#tableofcontents div{
+#tableofcontents li{
   margin:5px;
   padding:5px;
   background-color:lightgrey;
   width:80%;
 }
 
-#tableofcontents div img{
+#tableofcontents img{
   float:right;
   width:20%;
   border: 2px solid #888;
