@@ -109,14 +109,15 @@ div.media iframe{
   }
 }
 
-@media screen and (max-width:800px)
+@media (max-width:800px)
 {
-  div.media{
+  div.media#waterfall{
   display: none;
   }
+
 }
 
-@media screen and (max-width:500px)
+@media (max-width:500px)
 {
   nav{
     float:none;
