@@ -1,111 +1,109 @@
 /*Header*/
-header{
-  background:#0a5679;
-  padding:10px;
-  text-decoration:underline;
-  border:0px;
-  border-bottom:10px;
-  border-style:solid;
+header {
+  background: #0a5679;
+  border: 0px;
+  border-bottom: 10px;
   border-color: #a57;
+  border-style: solid;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-header a{
+header a {
   text-decoration: none;
 }
-header a:visited{
+header a:visited {
   color: #fff;
 }
 
 /*Menu*/
-nav{
-  float:right;
+nav {
+  float: right;
 }
 
-nav div{
-  background:#0a5679;
-  margin:10px;
+nav div {
+  background: #0a5679;
+  border-left: 20px solid #a57;
+  margin: 10px;
   padding: 10px;
-  border-left-width:20px;
-  border-color:#a57;
-  border-left-style:solid;
 }
 
-nav div:hover{
-  background:#4f08d3;
+nav div:hover {
+  background: #4f08d3;
 }
 
-nav a{
-  color:#fff;
+nav a {
+  color: #fff;
   text-decoration: none;
 }
-nav a:visited{
-  color:#fff;
+nav a:visited {
+  color: #fff;
 }
 
-nav div#current{
+nav div#current {
   background: #9e0979;
 }
 /*highlight on index*/
-section div{
-  text-align: center;
-  padding:50px;
-  margin:5px auto;
+section div {
+  
   background-color: #a57;
-  width:60%;
-  color:#fff;
   border-radius: 25px;
+  color: #fff;
+  margin: 5px auto;
+  padding: 50px;
+  text-align: center;
+  width: 60%;
+
 }
 
 /*tabel of contents on indexpage*/
-#tableofcontents{
+#toc{
   list-style-type: none;
 }
 
-#tableofcontents li{
-  margin:5px;
-  padding:5px;
-  background-color:lightgrey;
-  width:80%;
+#toc li {
+  background-color: lightgrey;
+  margin: 5px;
+  padding: 5px;
+  width: 80%;
 }
 
-#tableofcontents img{
-  float:right;
-  width:20%;
+#toc img {
+  
   border: 2px solid #888;
   border-radius: 4px;
+  float: right;
+  width: 20%;
 }
 
 /*media*/
-div.media{
-  float:right;
-  padding:5px;
-  margin-left:10px;
-  border:5px;
-  border-style:solid;
-  border-color:#0a5679;
-  width:305px;
+div.media {
+  border: 5px solid #0a5679;
+  float: right;
+  margin-left: 10px;
+  padding: 5px;
+  width: 305px;
 }
 
-div.media img{
-  width:300px;
+div.media img {
+  width: 300px;
 }
-div.media iframe{
-  width:300px;
+div.media iframe {
   height: 225px;
+  width: 300px;
 }
 
-#messagewindow{
-  width:50%;
-  height:100px;
+#messagewindow {
+  height: 100px;
+  width: 50%;
 }
 /*responsivity to diffrent screen sizes*/
-@media screen and (max-width:1000px)
-{
-  #tableofcontents img{
-    display:none;
+@media screen and (max-width:1000px) {
+  #toc img {
+    display: none;
   }
-  div.media{
-    float:none;
+  div.media {
+    float: none;
   }
 }
 
